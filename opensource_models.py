@@ -15,6 +15,7 @@ Ollama
 Packages required:
     langchain-ollama
 """
+
 from dotenv import load_dotenv
 from langchain.prompts.prompt import PromptTemplate
 from langchain_ollama import ChatOllama
@@ -39,7 +40,9 @@ def listen_and_process(model="llama3"):
     2. two interesting facts about them
     """
     load_dotenv()
-    summary_prompt_template = PromptTemplate(input_variables=["information"], template=summary_template)
+    summary_prompt_template = PromptTemplate(
+        input_variables=["information"], template=summary_template
+    )
     llm = ChatOllama(model=model)
     chain = summary_prompt_template | llm | StrOutputParser()
     res = chain.invoke(input={"information": information})
