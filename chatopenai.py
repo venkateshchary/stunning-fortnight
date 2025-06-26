@@ -17,6 +17,9 @@ In 2002, Musk founded the space technology company SpaceX, becoming its CEO and 
 Musk's political activities, views, and statements have made him a polarizing figure, especially following the COVID-19 pandemic. He has been criticized for making unscientific and misleading statements, including COVID-19 misinformation and promoting conspiracy theories, and affirming antisemitic, racist, and transphobic comments. His acquisition of Twitter was controversial due to a subsequent increase in hate speech and the spread of misinformation on the service. Musk was the largest donor in the 2024 U.S. presidential election, and is a supporter of global far-right figures, causes, and political parties. In early 2025, he served as senior advisor to United States president Donald Trump and as the de facto head of DOGE. His role in the second Trump administration attracted public backlash, particularly in response to DOGE.
 """
 
+def listen_and_respond(): pass
+
+
 if __name__ == "__main__":
     print("loaded...")
     load_dotenv()
@@ -29,20 +32,7 @@ if __name__ == "__main__":
         input_variables="information", template=summary_template
     )
     llm = ChatOpenAI(temperature=0, model_name="llama3.2:3b-instruct-q5_K_M") # faced current quota exceeds
-    """
-    Download Ollama from https://ollama.com/download
-    then pull the respective model using the command prompt Eg: ollama pull <model name>
-    """
     model = OllamaLLM(model="llama3")
-    llm = ChatGoogleGenerativeAI(
-    model="gemini-2.0-flash",
-    temperature=0,
-    max_tokens=None,
-    timeout=None,
-    max_retries=2,
-    # other params...
-)
-
     chain = summary_prompt_template | model
     res = chain.invoke(input={"information": information})
     print(res)

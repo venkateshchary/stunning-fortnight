@@ -1,0 +1,144 @@
+{
+  "success": true,
+  "credits_left": 100,
+  "rate_limit_left": 100,
+  "person": {
+    "publicIdentifier": "rbranson",
+    "linkedInIdentifier": "ACoAAAwp1RMBxG26M3Qkhm4klqLNr1bIplo6GhY",
+    "memberIdentifier": "204068115",
+    "linkedInUrl": "https://www.linkedin.com/in/rbranson",
+    "firstName": "Richard",
+    "lastName": "Branson",
+    "headline": "Founder at Virgin Group",
+    "location": "",
+    "summary": "Founder of the Virgin Group, which has gone on to grow successful businesses in sectors including mobile telephony, travel and transportation, financial services, leisure and entertainment and health and wellness. Virgin is a leading international investment group and one of the world's most recognised and respected brands.  Since starting youth culture magazine “Student” at aged 16, I have tried to find entrepreneurial ways to drive positive change in the world. In 2004 we established Virgin Unite, the non-profit foundation of the Virgin Group, which unites people and entrepreneurial ideas to create opportunities for a better world. Most of my time is now spent building businesses that will make a positive difference in the world and working with Virgin Unite and organisations it has incubated, such as The Elders, The Carbon War Room, The B Team and Ocean Unite. I also serve on the Global Commission on Drug Policy and supports ocean conservation with the Ocean Elders. I'm a tie-loathing adventurer, philanthropist and troublemaker, who believes in turning ideas into reality. Otherwise known as Dr Yes!",
+    "photoUrl": "https://media.licdn.com/dms/image/v2/C4D03AQHh6_Wth5f3rQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1625181963183?e=1756339200&v=beta&t=D1JIFVuxde00W7nErOZP7K38ClmwHWj-ceg8NqMr9yI",
+    "backgroundUrl": "https://media.licdn.com/dms/image/v2/D5616AQFJWxBmARzRig/profile-displaybackgroundimage-shrink_350_1400/B56Zcsy3IeG0Ag-/0/1748803229976?e=1756339200&v=beta&t=SF7zZD-pD9G0XpzfT_lA-MwQAjA_rsminnQSK8hr540",
+    "openToWork": false,
+    "premium": true,
+    "showVerificationBadge": false,
+    "creationDate": {
+      "month": 9,
+      "year": 2012
+    },
+    "followerCount": 18697246,
+    "positions": {
+      "positionsCount": 1,
+      "positionHistory": [
+        {
+          "title": "Founder",
+          "companyName": "Virgin Group",
+          "description": "Tie-loathing adventurer and thrill seeker, who believes in turning ideas into reality. Otherwise known as Dr Yes at Virgin!",
+          "startEndDate": {
+            "start": {
+              "month": 1,
+              "year": 1968
+            },
+            "end": null
+          },
+          "companyLogo": "https://media.licdn.com/dms/image/v2/D4E0BAQFuc4HHLEk47A/company-logo_100_100/B4EZcqgibkH0AQ-/0/1748764864563/virgin_logo?e=1756339200&v=beta&t=lvwxlm7ZjPurY4AqGtD_IFM2JXw1bqf6xZL10YcGxjQ",
+          "linkedInUrl": "https://www.linkedin.com/company/8028/",
+          "linkedInId": "8028"
+        }
+      ]
+    },
+    "schools": {
+      "educationsCount": 1,
+      "educationHistory": [
+        {
+          "degreeName": null,
+          "fieldOfStudy": null,
+          "linkedInUrl": "https://www.linkedin.com/search/results/all/?keywords=Stowe+School",
+          "schoolLogo": null,
+          "schoolName": "Stowe School",
+          "startEndDate": {
+            "start": {
+              "month": null,
+              "year": null
+            },
+            "end": null
+          }
+        }
+      ]
+    },
+    "skills": [
+      "Entrepreneurship",
+      "Dyslexic Thinking"
+    ],
+    "languages": [],
+    "languagesWithProficiency": [],
+    "recommendations": {
+      "recommendationsCount": 0,
+      "recommendationHistory": []
+    },
+    "certifications": {
+      "certificationsCount": 0,
+      "certificationHistory": []
+    },
+    "testScores": {
+      "testScoresCount": 0,
+      "testScoreHistory": []
+    },
+    "volunteeringExperiences": {
+      "volunteeringExperiencesCount": 0,
+      "volunteeringExperienceHistory": []
+    },
+    "interests": {
+      "topVoices": [],
+      "companies": [
+        {
+          "linkedinIdentifier": "8028",
+          "name": "Virgin",
+          "url": "https://www.linkedin.com/company/virgin/",
+          "slug": "virgin",
+          "followerCount": 310150
+        },
+        {
+          "linkedinIdentifier": "10400",
+          "name": "Virgin Australia",
+          "url": "https://www.linkedin.com/company/virgin-australia/",
+          "slug": "virgin-australia",
+          "followerCount": 269580
+        }
+      ]
+    }
+  },
+  "company": {
+    "linkedInId": "8028",
+    "name": "Virgin",
+    "universalName": "virgin",
+    "linkedInUrl": "https://www.linkedin.com/company/8028",
+    "employeeCount": 35296,
+    "followerCount": 310150,
+    "employeeCountRange": {
+      "start": 10001,
+      "end": 1
+    },
+    "websiteUrl": "http://www.virgin.com",
+    "tagline": null,
+    "description": "At Virgin, we’re all about creating unique customer experiences, challenging the status quo and championing people and the planet. For five decades, in five business sectors and on five continents, our purpose is to change business for good. \n \nThe home of Virgin is Virgin Management – supporting the Branson family and the growth of the Virgin brand by developing and nurturing valuable Virgin businesses around the world. Virgin Management works alongside all the different Virgin companies and their teams around the world. We have interests spanning travel & leisure, health & wellness, music & entertainment, telecoms & media, financial services and space. Each of those individual Virgin businesses has its own ways of working, but we are all united by a shared culture and purpose. ​\n \nVirgin Management also works alongside Virgin Unite, the non-profit foundation of the Virgin Group, and is home to Virgin Start Up, a not-for-profit organisation that delivers Start Up Loans, mentoring and other support to entrepreneurs in the UK.",
+    "industry": "Venture Capital and Private Equity Principals",
+    "phone": null,
+    "specialities": [
+      "Aviation",
+      "Financial services",
+      "Health and Wellness",
+      "Telco and Media",
+      "Energy investment",
+      "Travel and Tourism",
+      "Social Enterprise",
+      "Music and Festivals"
+    ],
+    "headquarter": {
+      "city": "London",
+      "country": "GB",
+      "postalCode": "W1T2NS",
+      "geographicArea": "England",
+      "street1": "Whitfield Studios",
+      "street2": "50a Charlotte Street"
+    },
+    "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQFuc4HHLEk47A/company-logo_100_100/B4EZcqgibkH0AQ-/0/1748764864563/virgin_logo?e=1756339200&v=beta&t=lvwxlm7ZjPurY4AqGtD_IFM2JXw1bqf6xZL10YcGxjQ",
+    "fundingData": null,
+    "backgroundUrl": "https://media.licdn.com/dms/image/v2/D4E1BAQHsxyJLbmasQw/company-background_10000/B4EZcqgeIyHsAU-/0/1748764845362/virgin_cover?e=1751526000&v=beta&t=Dt9O1dsg7c4jtz5b-XxF4H57uGT5PiiEJhWhKFzRsPU"
+  }
+}
