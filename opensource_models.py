@@ -18,9 +18,8 @@ Packages required:
 
 from dotenv import load_dotenv
 from langchain.prompts.prompt import PromptTemplate
-from langchain_ollama import ChatOllama
-from dotenv import load_dotenv
 from langchain_core.output_parsers import StrOutputParser
+from langchain_ollama import ChatOllama
 
 information = """
 Elon Reeve Musk (/ˈiːlɒn/ EE-lon; born June 28, 1971) is a businessman. He is known for his leadership of Tesla, SpaceX, X (formerly Twitter), and the Department of Government Efficiency (DOGE). Musk has been considered the wealthiest person in the world since 2021; as of May 2025, Forbes estimates his net worth to be US$424.7 billion.

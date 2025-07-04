@@ -9,6 +9,10 @@ langchain-openai = "*"
 langchain-core = "*"
 black = "*"
 python-dotenv = "*"
+langchain-tavily = "==0.2.5"
+flake8 = "*"
+isort = "*"
+ruff = "*"
 
 [dev-packages]
 

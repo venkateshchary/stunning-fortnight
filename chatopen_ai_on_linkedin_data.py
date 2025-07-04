@@ -1,8 +1,8 @@
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
-from third_parties.linkedin import scrape_linkedin_profiles
 
+from third_parties.linkedin import scrape_linkedin_profiles
 
 load_dotenv()
 
