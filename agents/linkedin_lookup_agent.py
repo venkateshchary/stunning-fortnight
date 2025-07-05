@@ -10,7 +10,7 @@ from langchain.agents import AgentExecutor, create_react_agent
 from langchain_core.prompts import PromptTemplate
 from langchain_core.tools import Tool
 from langchain_openai import ChatOpenAI
-from tools.tools import get_profile_url_tavily
+from .tools.tools import get_profile_url_tavily
 
 load_dotenv()
 
@@ -34,6 +34,7 @@ def look_up(name: str) -> str:
         )
     ]
 
+    # 
     react_prompt = hub.pull(
         "hwchase17/react"
     )  # harrison Chase 17 is the user name of Harrison Chase in the prompt tab
@@ -46,6 +47,7 @@ def look_up(name: str) -> str:
     agent_executor = AgentExecutor(
         agent=agent, tools=tools_for_agent, prompt=react_prompt
     )
+    # Agent executor is the run time of the agent
     result = agent_executor.invoke(
         input={"input": prompt_template.format(name_of_person=name)}
     )
@@ -53,5 +55,16 @@ def look_up(name: str) -> str:
     return linkedin_profile_url
 
 
+
+
+
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
-    look_up(name="venkatesh vadla zelis")
+    print(look_up(name="venkatesh vadla zelis"))
