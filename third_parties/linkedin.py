@@ -1,13 +1,16 @@
 """
 Prerequisite:
-    scrapin url: https://app.scrapin.io/lookup/persons
-    Coupon discount of 20%: EDENMARCO
-
+    1. scrapin url: https://app.scrapin.io/lookup/persons
+       Coupon discount of 20%: EDENMARCO
+       free tier will give 100 credits
+    2. https://nubela.co/proxycurl/linkedin
+       Free tier will get 10 credits
 """
 
 import os
-from dotenv import load_dotenv
+
 import requests
+from dotenv import load_dotenv
 
 load_dotenv()
 

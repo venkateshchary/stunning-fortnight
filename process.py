@@ -1,11 +1,8 @@
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
-from langchain_openai import ChatOpenAI
-import os
-from langchain_ollama.llms import OllamaLLM
 from langchain_google_genai import ChatGoogleGenerativeAI
-
-
+from langchain_ollama.llms import OllamaLLM
+from langchain_openai import ChatOpenAI
 
 information = """
 Elon Reeve Musk (/ˈiːlɒn/ EE-lon; born June 28, 1971) is a businessman. He is known for his leadership of Tesla, SpaceX, X (formerly Twitter), and the Department of Government Efficiency (DOGE). Musk has been considered the wealthiest person in the world since 2021; as of May 2025, Forbes estimates his net worth to be US$424.7 billion.
@@ -28,20 +25,22 @@ if __name__ == "__main__":
     summary_prompt_template = PromptTemplate(
         input_variables="information", template=summary_template
     )
-    llm = ChatOpenAI(temperature=0, model_name="llama3.2:3b-instruct-q5_K_M") # faced current quota exceeds
+    llm = ChatOpenAI(
+        temperature=0, model_name="llama3.2:3b-instruct-q5_K_M"
+    )  # faced current quota exceeds
     """
     Download Ollama from https://ollama.com/download
     then pull the respective model using the command prompt Eg: ollama pull <model name>
     """
     model = OllamaLLM(model="llama3")
     llm = ChatGoogleGenerativeAI(
-    model="gemini-2.0-flash",
-    temperature=0,
-    max_tokens=None,
-    timeout=None,
-    max_retries=2,
-    # other params...
-)
+        model="gemini-2.0-flash",
+        temperature=0,
+        max_tokens=None,
+        timeout=None,
+        max_retries=2,
+        # other params...
+    )
 
     chain = summary_prompt_template | model
     res = chain.invoke(input={"information": information})
