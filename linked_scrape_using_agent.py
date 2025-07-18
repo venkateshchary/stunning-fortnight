@@ -15,28 +15,31 @@ from agents.linkedin_lookup_agent import look_up as linkedin_lookup_agent
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
+from output_parsers import summary_parser
 
 load_dotenv()
 
 
-def provide_short_description(information: str):
+def provide_short_description(information: str, summary_parser):
     summary_template = """
     given the information {information} about a person from I want you to create:
     1. a short summary
     2. two interesting facts about them
+
+    Use information from LinkedIn \n
+    {format_instructions}
     """
 
     summary_prompt_template = PromptTemplate(
-        input_variables="information", template=summary_template
+        input_variables="information", template=summary_template,
+        partial_variables={"format_instructions": summary_parser.get_format_instructions()}
     )
     llm = ChatOpenAI(
         temperature=0, model_name="gpt-4o-mini"
     )  # 0 means it won't be creative
-    chain = (
-        summary_prompt_template | llm
-    )  # chaining will be acieved by using the pipe | operator
+    chain = summary_prompt_template | llm | summary_parser # chaining will be acieved by using the pipe | operator
     res = chain.invoke(input={"information": information})
-    return res.content
+    return res
 
 def scrape_linkedin_profiles(name: str):
     """
@@ -47,7 +50,7 @@ def scrape_linkedin_profiles(name: str):
         3. ingest linkedIn profile url to scrapin to get the profile information
         4. pass the information to chatopenAI to pull the short information
     """
-    linkendin_profile_url = linkedin_lookup_agent(name=name)
+    linkendin_profile_url = linkedin_lookup_agent(name=name, mock=True)
     url = "https://api.scrapin.io/v1/enrichment/profile"
     params = {
             "apikey": os.getenv("SCRAPIN_API_KEY"),
@@ -55,7 +58,7 @@ def scrape_linkedin_profiles(name: str):
         }
     response = requests.get(url, params=params, timeout=10)
     user_information = extract_valid_data(response.json())
-    short_discription = provide_short_description(user_information)
+    short_discription = provide_short_description(user_information, summary_parser)
     return short_discription
 
 if __name__ == "__main__":

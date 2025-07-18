@@ -11,11 +11,14 @@ from langchain_core.prompts import PromptTemplate
 from langchain_core.tools import Tool
 from langchain_openai import ChatOpenAI
 from .tools.tools import get_profile_url_tavily
+from pydantic import BaseModel, validate_call
 
 load_dotenv()
 
 
-def look_up(name: str) -> str:
+def look_up(name: str, mock=False) -> str:
+    if mock:
+        return "https://linkedin.com/in/getpeid"
 
     llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0)
 
@@ -55,7 +58,8 @@ def look_up(name: str) -> str:
     return linkedin_profile_url
 
 
-
+def get_linked_in_user_data(url:str):
+    pass
 
 
 
