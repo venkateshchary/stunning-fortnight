@@ -11,17 +11,11 @@ import os
 
 import requests
 from dotenv import load_dotenv
+from utils.extractors import extract_valid_data
 
 load_dotenv()
 
 
-def extract_valid_data(response_data: dict):
-    data = {
-        k: v
-        for k, v in response_data.items()
-        if v not in ([], "", None) and k not in ["certifications"]
-    }
-    return data
 
 
 def scrape_linkedin_profiles(linkedin_profile_url: str, mock: bool = True):
